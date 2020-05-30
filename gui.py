@@ -1,27 +1,13 @@
 import tkinter as tk
-from tkinter import *
 
-# creating Tk window
-from tkinter import messagebox
-
-master = Tk()
 root = tk.Tk()
+e = tk.Entry(root)
+e.insert(0, "some text")
 
-# setting geometry of tk window
-master.geometry("500x400")
+def some_callback(event): # note that you must include the event as an arg, even if you don't use it.
+    e.delete(0, "end")
+    return None
 
-# button widget
-b1 = Button(master, text="Search", width=10)
-b1.place(relx=1, x=-120, y=20, anchor=NE)
+e.bind("<Button-1>", some_callback)
 
-# Entry widget
-E1 = Entry(bd=3)
-E1.place(relx=1, x=-420, y=22, height=30, width=190)
-
-# label widget
-l = Label(master, text="I'm a Label")
-l.place(x=75, y=100)
-
-
-
-mainloop()
+e.pack()

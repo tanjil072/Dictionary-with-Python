@@ -11,9 +11,9 @@ engine = pyttsx3.init('sapi5')
 placeholder = "Please Type the word"
 voiceDecision = 'y'
 meaning = ''
-EntryString=''
-decision=''
-l=''
+EntryString = ''
+decision = ''
+l = ''
 
 
 def unmute():
@@ -40,6 +40,7 @@ root = tk.Tk()
 canvas1 = tk.Canvas(root, width=500, height=400)
 canvas1.pack()
 
+
 def update_meaning(word):
     read('Will you provide the meaning to our database')
     ProvideMeaning()
@@ -53,10 +54,10 @@ def update_meaning(word):
         x[word] = [USER_INP]
         global l
 
-       # print('The meaning of {} is {}'.format(EntryString, x[word]))
+        # print('The meaning of {} is {}'.format(EntryString, x[word]))
         global meaning
-        meaning=''
-        meaning='The meaning of {} is {}'.format(EntryString, x[word])
+        meaning = ''
+        meaning = 'The meaning of {} is {}'.format(EntryString, x[word])
         l = tk.Label(canvas1, text=meaning, wraplength=220)
         l.place(x=80, y=100)
         read('The meaning of {} is {}'.format(EntryString, x[word]))
@@ -67,13 +68,18 @@ def update_meaning(word):
         tk.messagebox.showinfo('Return', 'Maybe next time!!Thanks for using!')
         read('Maybe next time!!Thanks for using!')
 
+
 with open('my_dictionary_database.json') as f:
     x = json.load(f)  # open the database
 
 
+def clear_search(event):
+    E1.delete("0", tk.END)
+
+
 def search():
     global EntryString
-    EntryString=E1.get()
+    EntryString = E1.get()
     word = EntryString.lower()
     if word not in x:
         read('Sorry we dont have the word in our database.')
@@ -83,24 +89,23 @@ def search():
         global meaning
         meaning = 'The meaning of {} is {}\n'.format(EntryString, x[word])
         global l
-        l = tk.Label(canvas1, text=meaning,wraplength=220)
+        l = tk.Label(canvas1, text=meaning, wraplength=220)
         l.place(x=80, y=100)
         read('The meaning of {} is {}\n'.format(EntryString, x[word]))
 
 
 b1 = tk.Button(canvas1, text="Search", width=10, command=search)
 b1.place(relx=1, x=-120, y=20)
+
 # Entry widget
 E1 = tk.Entry(bd=3)
-E1.insert(0, placeholder)
+E1.insert(0, "Please Type The Word")
 read('please type the word')
 E1.place(relx=1, x=-420, y=22, height=30, width=190)
+E1.bind("<Button-1>", clear_search)
 
 
 # label widget
-
-
-
 
 
 def ProvideMeaning():
@@ -108,7 +113,7 @@ def ProvideMeaning():
                                        icon='warning')
     if MsgBox == 'yes':
         global decision
-        decision='y'
+        decision = 'y'
     else:
         tk.messagebox.showinfo('Return', 'You will now return to the application screen')
 
