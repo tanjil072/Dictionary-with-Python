@@ -100,6 +100,9 @@ E1.place(relx=1, x=-420, y=22, height=30, width=190)
 # label widget
 
 
+
+
+
 def ProvideMeaning():
     MsgBox = tk.messagebox.askquestion('Provide Meaning', 'Will you provide the meaning to our database?',
                                        icon='warning')
