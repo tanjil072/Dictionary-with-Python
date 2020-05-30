@@ -5,7 +5,7 @@ import json
 import pyttsx3
 
 # initialisation
-engine = pyttsx3.init('sapi5')
+engine = pyttsx3.init()
 # voiceDecision = (input('do you want voice support? \nyes : y\nno : n\n')).lower()
 
 placeholder = "Please Type the word"
@@ -64,9 +64,6 @@ def update_meaning(word):
         with open('my_dictionary_database.json', 'w') as f:
             json.dump(x, f, indent=2, sort_keys=True)
 
-    else:
-        tk.messagebox.showinfo('Return', 'Maybe next time!!Thanks for using!')
-        read('Maybe next time!!Thanks for using!')
 
 
 with open('my_dictionary_database.json') as f:
@@ -82,8 +79,8 @@ def search():
     EntryString = E1.get()
     word = EntryString.lower()
     if word not in x:
-        read('Sorry we dont have the word in our database.')
         messagebox.showinfo('Warning', 'Sorry we dont have the word in our database')
+        read('Sorry we dont have the word in our database.')
         update_meaning(word)
     else:
         global meaning
@@ -91,7 +88,9 @@ def search():
         global l
         l = tk.Label(canvas1, text=meaning, wraplength=220)
         l.place(x=80, y=100)
-        read('The meaning of {} is {}\n'.format(EntryString, x[word]))
+        read(meaning)
+
+
 
 
 b1 = tk.Button(canvas1, text="Search", width=10, command=search)
@@ -101,6 +100,7 @@ b1.place(relx=1, x=-120, y=20)
 E1 = tk.Entry(bd=3)
 E1.insert(0, "Please Type The Word")
 read('please type the word')
+
 E1.place(relx=1, x=-420, y=22, height=30, width=190)
 E1.bind("<Button-1>", clear_search)
 
@@ -115,7 +115,9 @@ def ProvideMeaning():
         global decision
         decision = 'y'
     else:
-        tk.messagebox.showinfo('Return', 'You will now return to the application screen')
+        read('Maybe next time!!Thanks for using!')
+        tk.messagebox.showinfo('Return', 'Maybe next time!!Thanks for using!')
+
 
 
 photo = tk.PhotoImage(file=r"C:\Users\Tanjil\PycharmProjects\Dictionary\mute.png")

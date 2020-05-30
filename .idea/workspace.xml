@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4d66dcc4-d2a5-4db4-86fe-4d49cf899085" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_dictionary_database.json" beforeDir="false" afterPath="$PROJECT_DIR$/my_dictionary_database.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_format.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +56,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Interactive Dictionary" />
+    <configuration name="aldjsfl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Dictionary" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -69,7 +68,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aldjsfl.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.aldjsfl" />
         <item itemvalue="Python.test_format (1)" />
         <item itemvalue="Python.test_format" />
         <item itemvalue="Python.Dictionary" />
-        <item itemvalue="Python.gui" />
       </list>
     </recent_temporary>
   </component>
@@ -185,22 +184,22 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="527" y="58" key="#test/62.0.1474.864@62.0.1474.864" timestamp="1590811296308" />
-    <state width="1453" height="224" key="GridCell.Tab.0.bottom" timestamp="1590813543682">
+    <state width="1453" height="152" key="GridCell.Tab.0.bottom" timestamp="1590819844189">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1590813543682" />
-    <state width="1453" height="224" key="GridCell.Tab.0.center" timestamp="1590813543682">
+    <state width="1453" height="152" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1590819844189" />
+    <state width="1453" height="152" key="GridCell.Tab.0.center" timestamp="1590819844181">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1590813543682" />
-    <state width="1453" height="224" key="GridCell.Tab.0.left" timestamp="1590813543682">
+    <state width="1453" height="152" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1590819844181" />
+    <state width="1453" height="152" key="GridCell.Tab.0.left" timestamp="1590819844181">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1590813543682" />
-    <state width="1453" height="224" key="GridCell.Tab.0.right" timestamp="1590813543682">
+    <state width="1453" height="152" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1590819844181" />
+    <state width="1453" height="152" key="GridCell.Tab.0.right" timestamp="1590819844189">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1590813543682" />
+    <state width="1453" height="152" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1590819844189" />
     <state x="308" y="74" key="SettingsEditor" timestamp="1590688680252">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
